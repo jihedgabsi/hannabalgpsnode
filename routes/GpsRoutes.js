@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const gpsController = require('../controllers/gpsController');
+const gpsController = require('../controllers/GpsController');
 
 router.post('/', gpsController.addGpsData);       // Ajouter une donnée GPS
 router.get('/', gpsController.getAllGpsData);     // Obtenir toutes les données GPS
