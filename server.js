@@ -13,9 +13,9 @@ app.use(express.json());
 
 
 // Routes API
-app.use('/api/clients', require('./routes/clientRoutes'));
+app.use('/api/clients', require('./routes/ClientRoutes'));
 app.use('/api/voitures', require('./routes/VoitureRoutes'));
-app.use('/api/gps', require('./routes/gpsRoutes'));
+app.use('/api/gps', require('./routes/GpsRoutes'));
 
 // Démarrer le serveur
 const PORT = process.env.API_PORT || 3000;
